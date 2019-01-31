@@ -1,0 +1,90 @@
+* 데이터
+주어진 데이터는 가상의 DVD Store 데이터입니다.
+데이터는 가상의 데이터로 2009년 한 해 동안 영업한 내용을 기록한 것입니다.
+데이터에 오류가 있다면 조교에게 연락주세요.
+
+* 데이터 형식
+첫 행은 데이터 어트리뷰트 정보, 그 이후는 모두 데이터입니다.
+모든 행은 comma(,)로 나뉘어 있습니다.
+
+* 데이터 파일
+Categories: 카테고리 정보
+Customers: 고객 정보
+Customers_history: 고객의 구매 기록 정보
+Inventory: DVD 재고 정보
+Products: DVD 정보
+Orders: 판매 기록 정보
+Orderlines: 판매 기록의 상세 정보
+
+* 데이터 정보
+
+- Categories   
+CATEGORY: 카테고리 번호 
+CATEGORYNAME: 카테고리 이름
+
+- Customers       
+CUSTOMERID: 고객 번호
+FIRSTNAME: 이름
+LASTNAME: 성
+ADDRESS1: 주소1
+ADDRESS2: 주소2
+CITY: 도시
+STATE: 주
+ZIP: 우편번호
+COUNTRY: 국가
+REGION: 1-미국, 2-그 외 
+EMAIL: 전자 우편
+PHONE: 전화번호
+CREDITCARDTYPE: 신용카드 종류
+CREDITCARD: 신용카드 번호 
+CREDITCARDEXPIRATION: 신용카드 만기일
+USERNAME: 아이디
+PASSWORD: 비밀번호
+AGE: 나이
+INCOME: 연소득
+GENDER: 성별
+
+%고객은 고객 번호로 식별 되어야 한다.
+%고객은 다른 사람과 겹치는 Username을 사용할 수 없다.
+%고객은 Address2, State, Zip, Email, Phone, Age, Income, Gender 정보는 기록하지 않아도 된다.
+
+- Cust_Hist       
+CUSTOMERID: 고객 번호
+ORDERID: 판매 번호
+PROD_ID: 제품 번호
+
+- Inventory       
+PROD_ID: 제품 번호 
+QUAN_IN_STOCK: 현재 제품 수량
+SALES: 올해 판매량
+
+%재고는 제품 번호로 식별되어야 한다.
+
+- Products
+PROD_ID: 제품 번호
+CATEGORY: 카테고리 번호
+TITLE: 제품 제목
+ACTOR: 출연 배우
+PRICE: 제품 가격 
+SPECIAL: 1-특별 행사, 0-해당 없음
+
+%제품은 제품 번호로 식별되어야 한다.
+
+- Orders          
+ORDERID: 판매 번호
+ORDERDATE: 판매 날짜
+CUSTOMERID: 구매한 고객 번호
+NETAMOUNT: 판매한 제품들의 가격의 합
+TAX: 세금
+TOTALAMOUNT: 고객이 지불한 금액(NETAMOUNT + TAX)
+
+%판매는 판매 번호로 식별되어야 한다.
+
+- Orderlines      
+ORDERLINEID: 판매내역 번호   
+ORDERID: 판매 번호
+PROD_ID: 판매된 제품 번호
+QUANTITY: 판매된 수량
+ORDERDATE: 판매 날짜
+
+%Orderlines의 어떤 레코드도 같은 판매내역 번호와 판매 번호 쌍을 가질 수 없다.
