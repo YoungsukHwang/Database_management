@@ -1,0 +1,45 @@
+J48 unpruned tree
+------------------
+
+capitalGain <= 6849.0
+|   maritalStatus =  Married-civ-spouse
+|   |   capitalLoss <= 1762.0
+|   |   |   educationNum <= 12.0
+|   |   |   |   capitalGain <= 5060.0
+|   |   |   |   |   educationNum <= 8.0:  <=50K (1621.0/152.0)
+|   |   |   |   |   educationNum > 8.0
+|   |   |   |   |   |   capitalLoss <= 1504.0
+|   |   |   |   |   |   |   age <= 33.0:  <=50K (2138.0/405.0)
+|   |   |   |   |   |   |   age > 33.0
+|   |   |   |   |   |   |   |   hoursPerWeek <= 34.0:  <=50K (608.0/97.0)
+|   |   |   |   |   |   |   |   hoursPerWeek > 34.0
+|   |   |   |   |   |   |   |   |   occupation =  Exec-managerial
+|   |   |   |   |   |   |   |   |   |   workClass =  Private:  >50K (387.0/151.0)
+|   |   |   |   |   |   |   |   |   |   workClass !=  Private:  <=50K (308.0/149.0)
+|   |   |   |   |   |   |   |   |   occupation !=  Exec-managerial
+|   |   |   |   |   |   |   |   |   |   workClass =  Self-emp-not-inc:  <=50K (503.0/126.0)
+|   |   |   |   |   |   |   |   |   |   workClass !=  Self-emp-not-inc
+|   |   |   |   |   |   |   |   |   |   |   education =  HS-grad:  <=50K (2268.0/754.0)
+|   |   |   |   |   |   |   |   |   |   |   education !=  HS-grad
+|   |   |   |   |   |   |   |   |   |   |   |   workClass =  Private
+|   |   |   |   |   |   |   |   |   |   |   |   |   age <= 47.0:  <=50K (867.0/357.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   age > 47.0:  >50K (376.0/183.0)
+|   |   |   |   |   |   |   |   |   |   |   |   workClass !=  Private:  >50K (434.0/209.0)
+|   |   |   |   |   |   capitalLoss > 1504.0:  <=50K (99.0)
+|   |   |   |   capitalGain > 5060.0:  >50K (81.0/4.0)
+|   |   |   educationNum > 12.0
+|   |   |   |   hoursPerWeek <= 31.0:  <=50K (311.0/116.0)
+|   |   |   |   hoursPerWeek > 31.0
+|   |   |   |   |   age <= 33.0
+|   |   |   |   |   |   hoursPerWeek <= 41.0:  <=50K (326.0/161.0)
+|   |   |   |   |   |   hoursPerWeek > 41.0:  >50K (314.0/125.0)
+|   |   |   |   |   age > 33.0:  >50K (2479.0/755.0)
+|   |   capitalLoss > 1762.0:  >50K (768.0/116.0)
+|   maritalStatus !=  Married-civ-spouse
+|   |   capitalLoss <= 2206.0:  <=50K (17173.0/789.0)
+|   |   capitalLoss > 2206.0:  >50K (101.0/41.0)
+capitalGain > 6849.0:  >50K (1399.0/20.0)
+
+Number of Leaves  : 	20
+
+Size of the tree : 	39

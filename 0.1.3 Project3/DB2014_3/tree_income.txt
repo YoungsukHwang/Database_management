@@ -1,0 +1,35 @@
+J48 unpruned tree
+------------------
+
+maritalStatus =  Married-civ-spouse
+|   capitalGain = 15024:  >50K (347.0)
+|   capitalGain != 15024
+|   |   education =  Prof-school:  >50K (362.0/66.0)
+|   |   education !=  Prof-school
+|   |   |   education =  Masters:  >50K (942.0/229.0)
+|   |   |   education !=  Masters
+|   |   |   |   education =  Bachelors
+|   |   |   |   |   capitalGain = 0
+|   |   |   |   |   |   occupation =  Exec-managerial:  >50K (683.0/175.0)
+|   |   |   |   |   |   occupation !=  Exec-managerial
+|   |   |   |   |   |   |   occupation =  Sales:  >50K (375.0/130.0)
+|   |   |   |   |   |   |   occupation !=  Sales
+|   |   |   |   |   |   |   |   occupation =  Prof-specialty:  >50K (597.0/216.0)
+|   |   |   |   |   |   |   |   occupation !=  Prof-specialty:  <=50K (671.0/327.0)
+|   |   |   |   |   capitalGain != 0:  >50K (323.0/48.0)
+|   |   |   |   education !=  Bachelors
+|   |   |   |   |   occupation =  Prof-specialty:  >50K (639.0/251.0)
+|   |   |   |   |   occupation !=  Prof-specialty
+|   |   |   |   |   |   capitalGain = 0
+|   |   |   |   |   |   |   capitalLoss = 0
+|   |   |   |   |   |   |   |   occupation =  Exec-managerial
+|   |   |   |   |   |   |   |   |   education =  HS-grad:  <=50K (384.0/161.0)
+|   |   |   |   |   |   |   |   |   education !=  HS-grad:  >50K (585.0/272.0)
+|   |   |   |   |   |   |   |   occupation !=  Exec-managerial:  <=50K (7666.0/1961.0)
+|   |   |   |   |   |   |   capitalLoss != 0:  >50K (515.0/230.0)
+|   |   |   |   |   |   capitalGain != 0:  >50K (887.0/395.0)
+maritalStatus !=  Married-civ-spouse:  <=50K (17585.0/1149.0)
+
+Number of Leaves  : 	15
+
+Size of the tree : 	29
