@@ -2,7 +2,8 @@
 The course of 'Data Management and Analysis' in Fall 2014.
 The Codes are from the projects conducted during the semester.
 
-Course overview : In this course, we will learn about database (DB), design and implementation of information system based on it, and various theories and techniques related to DB analysis. Specifically, this course deals with the concept of DB, relational data model, SQL, DB concept model and design, DB programming, DB design theory and normalization, file structure and indexing, transaction processing and concurrency control. With regard to DB mining, this course covers association analysis, decision tree, rule based mining, and sequential pattern mining. This course includes DB system construction and analysis project using MySQL DBMS.
+Course overview :</br>
+In this course, we will learn about database (DB), design and implementation of information system based on it, and various theories and techniques related to DB analysis. Specifically, this course deals with the concept of DB, relational data model, SQL, DB concept model and design, DB programming, DB design theory and normalization, file structure and indexing, transaction processing and concurrency control. With regard to DB mining, this course covers association analysis, decision tree, rule based mining, and sequential pattern mining. This course includes DB system construction and analysis project using MySQL DBMS.
 
 Textbook : R. Elmasri and S. B. Navathe, Fundamentals of Database Systems, 6th Edition, Addison Wesley, 2010
 
