@@ -1,5 +1,5 @@
 # database_management
-The course of 'Data Management and Analysis' in Fall 2014.
+The course of 'Data Management and Analysis'
 The Codes are from the projects conducted during the semester.
 
 Course overview :</br>
